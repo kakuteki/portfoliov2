@@ -1,0 +1,181 @@
+# portfoliov2<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="kakutekiポートフォリオ">
+	<meta name="viewport" content="width=device-width">
+	<title>kakutekiポートフォリオ</title>
+	<link rel="stylesheet" media="all" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body id="top">
+	<div id="wrapper">
+
+
+			<!-- made -->
+			<section id="sec01">
+				<header>
+					<h2><span>作成したもの</span></h2>
+				</header>
+				<div class="innerS">
+					<span class="text">こんにちはkakutekiと申します。ネットでの活動名義でサモンという名前でも活動させていただいております。kakutekiというのはプログラマとしての名前として覚えていただけると幸いです。</span>
+				</div>
+			</section>
+			<!-- //made -->
+
+
+				<!-- language&Toul -->
+				<section id="sec02">
+						<h2><span>使える言語・ツール</span></h2>
+					<div class="inner">
+						<ul class="col4">
+							<li>
+								<p class="img"><img src="images/logo01.png" width="168" height="168" alt=""></p>
+								<p><span class="logo">C言語</span></p>
+							</li>
+							<li>
+								<p class="img"><img src="images/logo03.png" width="168" height="168" alt=""></p>
+								<p><span class="logo">Python</span></p>
+							</li>
+							<li>
+								<p class="img"><img src="images/logo02.png" width="168" height="168" alt=""></p>
+								<p><span class="logo">PHP</span></p>
+							</li>
+							<li>
+								<p class="img"><img src="images/logo04.png" width="168" height="168" alt=""></p>
+								<p><span class="logo">Java</span></p>
+							</li>
+						</ul>
+					</div>
+
+					<section id="languages">
+						<h1><i class="fas fa-language"></i> プログラミング言語</h1>
+						<table class="table table-striped">
+								<tbody>
+									<tr><td>わかる</td><td>Japanese</td></tr>
+									<tr><td>まあまあ</td><td>php, C, html, </td></tr>
+									<tr><td>なんとなく</td><td>Linux, Java, javascript, css, English</td></tr>
+									<tr><td>かじっただけ</td><td>Chinese, python, node.js</td></tr>
+							</tbody></table>
+					</section>
+
+					<section id="framework">
+						<h1><i class="fas fa-car"></i> フレームワーク</h1>
+						<table class="table table-striped">
+								<tbody>
+									<tr><td>なんとなく</td><td>laravel, vue.js, jquery, bootstap4, nuxt.js</td></tr>
+									<tr><td>かじっただけ</td><td>react native, expo, monaca</td></tr>
+							</tbody></table>
+					</section>
+
+					<section id="infrastructure">
+						<h1><i class="fas fa-server"></i> インフラ</h1>
+						<table class="table table-striped">
+								<tbody><tr><td></td><td>ConoHa VPS, Cent OS, heroku, netlify, AWS S3, cloudflare, firebase, Github pages, ラズパイ, arduino, esp8266</td></tr>
+							</tbody></table>
+					</section>
+
+					<section id="tools">
+						<h1><i class="fas fa-laptop"></i> ツール</h1>
+						<table class="table table-striped">
+								<tbody><tr><td>開発環境</td><td>mac book pro 2017, Ubuntu 18.04, git, GitHub</td></tr>
+								<tr><td>エディタ</td><td>vim, Visual Studio Code</td></tr>
+								<tr><td>作曲ソフト</td><td>FL studio, Renoise</td></tr>
+							</tbody></table>
+					</section>
+
+
+
+				</section>
+				</ul>
+			</section>
+			<!-- // language＆Toul -->
+
+
+
+			<!-- SNS -->
+			<section id="sec03">
+				<header>
+					<h2><span>SNS</span></h2>
+				</header>
+				<div class="inner">
+					<ul class="col4">
+						<li>
+							<p class="img"><img class="set" src="images/Twitterlogo.png" width="168" height="168" alt=""></p>
+						</li>
+						<li>
+							<p class="img"><img class="set" src="images/Instagramlogo.png" width="168" height="168" alt=""></p>
+						</li>
+						<li>
+							<p class="img"><img class="set" src="images/YouTubelogo.png" width="168" height="168" alt=""></p>
+						</li>
+						<li>
+							<p class="img"><img class="set" src="images/githublogo.svg" width="168" height="168" alt=""></p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<!--<ul id="sns">
+			<li><a href="#" target="_blank"><img src="images/iconFb.png" width="20" height="20" alt="FB"></a></li>
+			<li><a href="#" target="_blank"><img src="images/iconTw.png" width="20" height="20" alt="twitter"></a></li>
+			<li><a href="#" target="_blank"><img src="images/iconInsta.png" width="20" height="20" alt="Instagram"></a></li>
+			<li><a href="#" target="_blank"><img src="images/iconYouTube.png" width="20" height="20" alt="You Tube"></a></li>
+		</ul> -->
+
+			<!-- // SNS -->
+
+
+
+			<!--self-introduction  -->
+			<section id="sec04">
+				<header>
+					<h2><span>自己紹介</span></h2>
+				</header>
+
+
+				  <section id="profile">
+				    <h1><i class="far fa-smile"></i> 私について</h1>
+				    <table  class="table table-striped">
+				        <tbody><tr><td>名前</td><td>kakuteki</td></tr>
+				        <tr><td>Twitter</td><td><a href="https://twitter.com/samonroof1/" target="_blank">@samonroof1</a></td></tr>
+				        <tr><td>所属</td><td>工業高校3年生</td></tr>
+				        <tr><td>生息地</td><td>東京</td></tr>
+				        <tr><td>趣味</td><td>webサービス開発, ロボット製作, アプリ開発, 作曲, 音楽視聴, ピアノ </td></tr>
+				        <tr><td>すきなアニメ</td><td>ハヤテのごとく！</td></tr>
+				        <tr><td>すきなアーティスト</td><td>
+				              <a href="https://www.youtube.com/user/pinocchiopchannel/" target="_blank">ピノキオピー
+				            , <a href="https://www.youtube.com/channel/UCOvn_LNao_hjdY-A5d7RUKg/" target="_blank">ネクライトーキー
+				            , <a href="https://www.youtube.com/channel/UCeQwCalZK1scamopwHt9UWw/" target="_blank">람다람
+				            , <a href="https://www.youtube.com/c/Yunomichannel/" target="_blank">Yunomi
+				            , <a href="https://www.youtube.com/c/SLAVEVVR_wa_dance_dekirukara" target="_blank">SLAVE.V-V-R
+				            , <a href="https://www.youtube.com/c/DECO27Official" target="_blank">DECO*27
+				            , <a href="https://www.youtube.com/channel/UCcd-GOvl9DdyPVHQxy58bOw" target="_blank">ずっと真夜中でいいのに。
+				            , <a href="https://www.youtube.com/c/cosmospeople" target="_blank">宇宙人
+				            , <a href="https://www.youtube.com/channel/UC2tN8yIRVdZ8-Ig2REhPPWg" target="_blank">ano
+				            , <a href="https://www.youtube.com/channel/UCvq3kUGY5Dbsdkr3DZx25Sw" target="_blank">Giga
+				            , <a href="https://www.youtube.com/user/reolch" target="_blank">Reol
+				            , <a href="https://www.youtube.com/channel/UCLww4xTaLWjpESsK2HzkkcA" target="_blank">かんざきひろ
+				            , <a href="https://www.youtube.com/channel/UCPdqQ8TuATjMG63hiL5rX5g" target="_blank">ππ来来
+				            , <a href="https://www.youtube.com/channel/UCpp09p9Dq2K6uuRFpMG9Meg" target="_blank">  黒木渚
+				            , <a href="https://www.youtube.com/c/TeddyLoid" target="_blank">  TeddyLoid
+				          </td></tr>
+				      </tbody></table>
+				  </section>
+
+
+			</section>
+			<!-- // self-introduction -->
+
+			<footer id="footer">
+				kakuteki(c) 2020 portfolio
+			</footer>
+
+		</div>
+	</div>
+
+</body>
+</html>
