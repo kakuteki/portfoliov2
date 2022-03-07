@@ -11,8 +11,8 @@ body{
 	font-weight: 300;
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
-	color: #cc7eb1;			//文字色
-	background-color: #fef4f4	//背景色
+	color: #cc7eb1;			
+	background-color: #fef4f4	
 }
 
 a{
