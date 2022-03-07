@@ -1,274 +1,323 @@
 /* reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
-ul{list-style:none;}
-table{border-collapse:collapse;border-spacing:0;}
-q:before,q:after{content:'';}
-h1,h2,h3,h4,h5,h6{font-size:100%;}
-img,abbr,acronym,fieldset{border:0;}
-
-body{
-	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
-	font-weight: 300;
-	-webkit-text-size-adjust:100%;
-	overflow-x: hidden;
-	color: #cc7eb1;			
-	background-color: #fef4f4	
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-	color: #0066ff;
-	text-decoration: none;
+ul {
+  list-style: none;
 }
 
-a:hover, .active{
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+img, abbr, acronym, fieldset {
+  border: 0;
+}
+
+body {
+  font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  color: #cc7eb1;
+  /* 文字色 */
+  background-color: #fef4f4
+    /* 背景色 */
+}
+
+a {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+a:hover, .active {
   text-decoration: underline;
 }
 
-a:active, a:focus,input:active, input:focus{outline:0;}
+a:active, a:focus, input:active, input:focus {
+  outline: 0;
+}
 
 /* フッター
 ------------------------------------------------------------*/
-#footer{
-	clear: both;
-	padding: 50px 10px 50px 0;
-	text-align: center;
-	font-size: 12px;
-	color: #000000;
+#footer {
+  clear: both;
+  padding: 50px 10px 50px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
 }
 
 /* 共通
 ------------------------------------------------------------*/
-h1, h2{
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+h1, h2 {
+  font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
 }
 
-img{
-	max-width: 100%;
-	height: auto;
+img {
+  max-width: 100%;
+  height: auto;
+}
+.img {
+position: relative;
+/* 画像について絶対配置abosoluteを用いるため、親はrelativeに設定する */
+height: 335px;
+}
+.img img{
+  position: absolute;
+  left:10px;
+  top:50px;
+  width:600px;
+  transition: all 0.5s;
+}
+.img:hover img{
+  left:0px; /* 10px→0px とし、幅も600から630とする  実際の動作を確認して指定すると良い */
+  top:0px;
+  width:630000px;
 }
 
-section{
+section {
   clear: both;
 }
 
-section h1{
-	width: 30%;
-	margin: 5px auto;
-	font-size: 18px;
-	font-weight:normal;
-	text-align: center;
+section h1 {
+  width: 30%;
+  margin: 5px auto;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
 }
 
-section h2{
-	width: 60%;
-	margin: 70px auto;
-	font-size: 22px;
-	font-weight:normal;
-	text-align: center;
+section h2 {
+  width: 60%;
+  margin: 70px auto;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
 }
 
 /* アンダーライン */
 section h2 span {
-
-	flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
-	margin:0 0 50px 0;
-	list-style: none;
+  flex-wrap: wrap;
+  /*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin: 0 0 50px 0;
+  list-style: none;
 }
 
-section h2 span{
-    /*線の基点とするためrelativeを指定*/
-	position: relative;
+section h2 span {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
 }
 
 section h2 span.current h2,
-section h2 span:hover{
-	color:#0481A2;
+section h2 span:hover {
+  color: #0481A2;
 }
 
 section h2 span::after {
-    content: '';
-    /*絶対配置で線の位置を決める*/
-    position: absolute;
-    bottom: -10px;
-    left: -10%;
-    /*線の形状*/
-    width: 120%;
-		padding-bottom: 20px;
-		border-bottom: 3px solid #191970;
-    /*アニメーションの指定*/
-    transition: all .3s;
-    transform: scale(0, 1);/*X方向0、Y方向1*/
-    transform-origin: center top;/*上部中央基点*/
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: -10px;
+  left: -10%;
+  /*線の形状*/
+  width: 120%;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #191970;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);
+  /*X方向0、Y方向1*/
+  transform-origin: center top;
+  /*上部中央基点*/
 }
 
 /*現在地とhoverの設定*/
 section h2 span.current h2::after,
 section h2 span:hover::after {
-    transform: scale(1, 1);/*X方向にスケール拡大*/
+  transform: scale(1, 1);
+  /*X方向にスケール拡大*/
 }
 
-.inner{
-	width: 80%;
-	margin: 0 auto;
-	padding-bottom: 50px;
-
+.inner {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
-#sec03 .inner, #sec04 .inner{
-	border-bottom: 0px solid #191970;
+#sec03 .inner, #sec04 .inner {
+  border-bottom: 0px solid #191970;
 }
 
-.innerS{
-	width: 60%;
-	margin: 0 auto;
-	padding-bottom: 10px;
+.innerS {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
-.text{
-color: #000000;
+.text {
+  color: #000000;
 }
+
 /* SEC01 Gallery
 ------------------------------------------------------------*/
-#sec01{
-	padding: 0 !important;
-}
-#gallery{
-	overflow: hidden;
-	position: relative;
-	left: 250px;
+#sec01 {
+  padding: 0 !important;
 }
 
-#gallery li{
-	float: left;
-	width: calc(100%/3);
-	line-height: 0;
-}
-#gallery li.full{
-	width: 100%;
+#gallery {
+  overflow: hidden;
+  position: relative;
+  left: 250px;
 }
 
-#gallery img{
-	display: block;
-	width: 50%;
-	height: auto;
+#gallery li {
+  float: left;
+  width: calc(100%/3);
+  line-height: 0;
 }
+
+#gallery li.full {
+  width: 100%;
+}
+
+#gallery img {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
 /* SEC02 Gallery
 ------------------------------------------------------------*/
-#sec02{
-	padding: 0 !important;
+#sec02 {
+  padding: 0 !important;
 }
 
-.logo{
-color: #000000;
+.logo {
+  color: #000000;
 }
 
 /* SEC03 BRAND
 ------------------------------------------------------------*/
-#sec03{
-	padding-bottom: 0 !important;
+#sec03 {
+  padding-bottom: 0 !important;
 }
-.col4 .img{
-	margin: 0 auto;
+
+.col4 .img {
+  margin: 0 auto;
 }
-img.set{
-    width: 45%;
-    height: 180px;
-    margin: 12px;
-    -o-object-fit: contain;
-    object-fit: contain;
+
+img.set {
+  width: 45%;
+  height: 180px;
+  margin: 12px;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 /* SEC04 PROJECT
 ------------------------------------------------------------*/
-#sec04{
-	padding-bottom: 0 !important;
+#sec04 {
+  padding-bottom: 0 !important;
 }
 
 td,
 th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 10px;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
 }
 
 td {
-    text-align: center;
+  text-align: center;
 }
 
 tr:nth-child(even) {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 th[scope="col"] {
-    background-color: #696969;
-    color: #fff;
+  background-color: #696969;
+  color: #fff;
 }
 
 th[scope="row"] {
-    background-color: #d7d9f2;
+  background-color: #d7d9f2;
 }
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-size: .8rem;
 
-		margin-top:30px;
-		margin-right:30px;
-		margin-bottom:30px;
-		margin-left:30px;
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: .8rem;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
+
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
-body{
-		font-size:14px;
-	}
+body {
+  font-size: 14px;
+}
 
-	#wrapper{
-		width: 100%;
-	}
+#wrapper {
+  width: 100%;
+}
 
-	#content{
-		width: 80%;
-	}
+#content {
+  width: 80%;
+}
 
-  a#menu{
-		display:none;
-	}
+a#menu {
+  display: none;
+}
 
-	.panel{
-		display:block !important;
-	}
+.panel {
+  display: block !important;
+}
 
-	#mainnav li{
-		font-size: 14px;
-		padding: 10px 0;
-	}
+#mainnav li {
+  font-size: 14px;
+  padding: 10px 0;
+}
 
-	#sns{
-		margin-top: 50px;
-	}
+#sns {
+  margin-top: 50px;
+}
 
-	#sns li{
-		display: inline-block;
-		padding-right: 10px;
-	}
+#sns li {
+  display: inline-block;
+  padding-right: 10px;
+}
 
-	#sns a:hover img{
-		opacity: .8;
-	}
+#sns a:hover img {
+  opacity: .8;
+}
 
-	/* SEC03 BRAND
+/* SEC03 BRAND
 	-----------------*/
-	.col4 li{
-		display: inline-block;
-		width: 18%;
-		padding: 0 3%;
-		vertical-align: top;
-		text-align: center;
-	}
+.col4 li {
+  display: inline-block;
+  width: 18%;
+  padding: 0 3%;
+  vertical-align: top;
+  text-align: center;
+}
 
-  #footer{
-		padding: 30px 10px 70px 0;
-	}
+#footer {
+  padding: 30px 10px 70px 0;
+}
 }
